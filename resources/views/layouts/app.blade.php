@@ -47,9 +47,9 @@
                 @if(Auth::guest())
                 <form class="navbar-form" id="search-form-mobile" action="/search">
                     <input type="text" class="form-control" id="search-input-mobile" name="keyword" aria-label="..."
-                           placeholder="搜索你感兴趣的问题" style="width: 220px;box-shadow: none;margin-top: -11px;margin-bottom: -20px;">
+                           placeholder="搜索你感兴趣的问题" style="width: 260px;box-shadow: none;margin-top: -11px;margin-bottom: -20px;">
                     <button type="submit" class="btn btn-link" id="ask-mobile"
-                            style="text-decoration: none;margin-top: -16px;margin-bottom: -20px;margin-left: 180px;">
+                            style="text-decoration: none;margin-top: -16px;margin-bottom: -20px;margin-left: 220px;">
                         <i class="iconfont" id="search-icon-mobile"
                            style="color: #959FAF;font-size: 14px;">&#xe69f;</i>
                     </button>
@@ -201,21 +201,6 @@
             }
         });
 
-        $("#search-input-mobile").focus(function () {
-            $("#search-icon-mobile").css("color","#272B2D");
-            startAnimation();
-            function startAnimation() {
-                $('#search-input-mobile').animate({marginLeft: "-=68px",width:"+=68px"}, 200)
-                $('#search-icon-mobile').animate({marginLeft: "+=68px"}, 200)
-            }
-        }).blur(function () {
-            $("#search-icon-mobile").css("color","#959FAF");
-            startAnimation();
-            function startAnimation() {
-                $('#search-input-mobile').animate({width: "-=68px",marginLeft: "+=68px"}, 200)
-                $('#search-icon-mobile').animate({marginLeft: "-=68px"}, 200)
-            }
-        });
 
         $(window).scroll(function() {
             $('#back-to-top').tooltip('hide');

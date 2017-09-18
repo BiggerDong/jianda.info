@@ -92,9 +92,11 @@ class LoginController extends Controller
         User::create([
             'auth_type' => 'weibo',
             'auth_id' => $weiboUser['id'],
+            'uid' => time().rand(10000,99999),
             'name' => $weiboUser['name'],
             'avatar' => 'http://'.env('QINIU_DOMAIN').'/'.$fileName,
-            'api_token' => str_random('60')
+            'api_token' => str_random('60'),
+            'settings' => ['city' => '','school' => '','company' => '']
         ]);
         $loginUser = User::where('auth_type','weibo')->where('auth_id',$weiboUser['id'])->first();
         Auth::login($loginUser);
@@ -123,9 +125,11 @@ class LoginController extends Controller
         User::create([
             'auth_type' => 'qq',
             'auth_id' => $qqUser['id'],
+            'uid' => time().rand(10000,99999),
             'name' => $qqUser['name'],
             'avatar' => 'http://'.env('QINIU_DOMAIN').'/'.$fileName,
-            'api_token' => str_random('60')
+            'api_token' => str_random('60'),
+            'settings' => ['city' => '','school' => '','company' => '']
         ]);
         $loginUser = User::where('auth_type','qq')->where('auth_id',$qqUser['id'])->first();
         Auth::login($loginUser);
@@ -154,9 +158,11 @@ class LoginController extends Controller
         User::create([
             'auth_type' => 'github',
             'auth_id' => $githubUser['id'],
+            'uid' => time().rand(10000,99999),
             'name' => $githubUser['name'],
             'avatar' => 'http://'.env('QINIU_DOMAIN').'/'.$fileName,
-            'api_token' => str_random('60')
+            'api_token' => str_random('60'),
+            'settings' => ['city' => '','school' => '','company' => '']
         ]);
         $loginUser = User::where('auth_type','github')->where('auth_id',$githubUser['id'])->first();
         Auth::login($loginUser);
