@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 361916 */
+    src: url('//at.alicdn.com/t/font_361916_hisqnpj7j8fo5hfr.eot');
+    src: url('//at.alicdn.com/t/font_361916_hisqnpj7j8fo5hfr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_361916_hisqnpj7j8fo5hfr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_361916_hisqnpj7j8fo5hfr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_361916_hisqnpj7j8fo5hfr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.navbar-default {
+    box-shadow: 0px 1.5px 0px #d8d8d8;
+}
+
+
+
+.logo_nav {
+     margin-top: -9px;
+ }
+
+#ul_nav {
+    margin-top: -9px;
+    margin-bottom: -11px;
+}
+
+.notify_nav {
+    margin-top: 11px;
+}
+
+.avatar_nav {
+    border-radius: 3px;
+}
+
+#nav_menu {
+    border-radius: 3px;
+}
+
+input:focus {
+    box-shadow:none!important;
+}
+
+button:focus {
+    box-shadow:none!important;
+    outline:0!important;
+}
+
+/*Login CSS*/
+.login_logo {
+    margin-top: 26px;
+}
+
+.lead.genaral_text {
+    font-size: 35px;
+}
+
+.number_text {
+    font-size: 45px;
+}
+
+.login_text {
+    margin-top: 19%;
+}
+
+.login_text > p {
+    display: inline-block;
+}
+
+.login_model {
+    margin-top: 3%;
+}
+
+.register_model {
+    margin-top: 1%;
+}
+
+.login_model > h2 {
+    text-align: center;
+}
+
+.register_model > h2 {
+    text-align: center;
+}
+
+.login_show {
+    height: auto;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.login_auth_logo > a{
+    text-decoration:none;
+}
+
+.hr_footer {
+    margin-top: 10%;
+}
+
+.editor {
+    margin-bottom: 25px;
+    height: 200px;
+    display: none;
+}
+
+.btn.btn-success.follows {
+    background: none;
+    color: #272B2D;
+}
+
+.btn.btn-success.follows:hover {
+    background: #272B2D;
+    color: #ffffff;
+}
+
+.btn.btn-success.pull-right.followh {
+    background: none;
+    color: #272B2D;
+}
+
+.btn.btn-success.pull-right.followh:hover {
+    background: #272B2D;
+    color: #ffffff;
+}
+
+.listli {
+    height: 50px;
+    background-color: #f3f5f7;
+    list-style:none;
+    padding: 10px;
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 10px auto;
+    padding: auto 20px;
+}
+
+.listli.unread {
+    background-color: #fff9ea;
+}
