@@ -67,8 +67,7 @@ class QuestionsController extends Controller
         $question->user()->increment('questions_count');
         Auth::user()->follows()->toggle($question->id);
         $question->topics()->attach($topics);
-        //清空Redis内容
-        Redis::flushdb();
+
         return redirect()->route('questionshow',[$question->qid]);
     }
 
