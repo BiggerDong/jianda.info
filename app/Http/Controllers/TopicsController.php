@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\TopicRepository;
+use App\Topic;
 use Illuminate\Http\Request;
 
 class TopicsController extends Controller
@@ -40,5 +41,17 @@ class TopicsController extends Controller
             }
         }
         return view('topics.show',compact('topic','questions','top','hots','relation','topicFor'));
+    }
+
+    public function store(Request $request)
+    {
+        $data = [
+            'tid' => time().rand(10000,99999),
+            'name' => $request->get('name'),
+        ];
+
+        Topic::create($data);
+        return redirect('/topics');
+
     }
 }

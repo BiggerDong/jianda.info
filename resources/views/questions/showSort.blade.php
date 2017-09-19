@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 </head>
 @section('content')
-    <div class="container" style="color: #000000;">
+    <div class="container" style="color: #000000;margin-top: -10px;">
         <div class="row">
             <div class="col-md-8">
                 <div class="qtitleshow">
@@ -125,39 +125,44 @@
                                     <a style="color: #000000;text-decoration: none;" href="/users/{{ $answer->user->id }}/home">
                                         {{ $answer->user->name }}
                                     </a>
-                                    <p style="color: #959FAF;font-size: 12px;">每个人的问答社区</p>
+                                    @if($answer->user->verify !== null)
+                                        <span style="display: inline-block;margin-left: 2px;cursor: default;">
+                                        <i class="iconfont" style="font-size: 14px;color: #FFA000">&#xe627;</i>
+                                    </span>
+                                    @endif
+                                    <p style="color: #959FAF;font-size: 12px;">共参与了{{ $answer->user->answers_count }}次回答</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7">
-                        <span class="pull-right" style="color: #959FAF;margin-top: 9px;font-size: 12px;">
+                        <span class="pull-right" id="timetohide" style="color: #959FAF;margin-top: 9px;font-size: 12px;">
                             {{$answer->created_at->diffForHumans()}}
                         </span>
                         </div>
                     </div>
-                    <div class="abodyshow" style="margin-left: 55px;">
+                    <div class="abodyshow">
                         <p>{{ $answer->body }}</p>
                     </div>
-                    <div class="row" style="margin-top: 30px;">
+                    <div class="row" id="tomore">
                         <div class="col-md-12">
                             @if(count($answer->add) > 0)
                                 <div class="aaddshow">
-                                    <a class="btn btn-sm btn-success pull-right goknow" style="margin-bottom: -20px;"  id="goknow">展开了解</a>
-                                    <div class="aaddshowself" style="margin-top: 30px;display: none;margin-left: 55px;">
+                                    <a class="btn btn-sm btn-success pull-right goknow" id="goknow">展开了解</a>
+                                    <div class="aaddshowself" style="margin-top: 30px;display: none;">
                                         {!! $answer->add !!}
                                     </div>
                                 </div>
                             @endif
                         </div>
                     </div>
-                    <vote-comment answer="{{ $answer->id }}" count="{{ $answer->votes_count }}"
+                    <vote-comment answer="{{ $answer->id }}" count="{{ $answer->votes_count }}" id="vote-comment"
                                   countc="{{ $answer->comments()->count() }}" style="margin-left: 60px;">
                     </vote-comment>
                     <hr>
                 @endforeach
             </div>
             @if($topic->questions->where('qid','!=',$question->qid)->count() >= 1 )
-                <div id="guess" class="col-md-3" style="margin-left: 45px;margin-top: 30px;">
+                <div id="guess" class="col-md-3" style="margin-top: 30px;">
                     <p class="guessp"
                        style="font-size: 14px;border: 1px solid #959FAF;border-radius: 3px;
                text-align: center;color: #959FAF;padding: 4px;border-radius: 3px;"><span>你可能感兴趣</span></p>
@@ -229,6 +234,51 @@
     body {
         background-color: #ffffff;
     }
+
+    @media screen and (max-width:980px){
+        #share-warning-time {
+            display: none;
+        }
+
+        #vote-comment {
+            display: none;
+        }
+
+        .abodyshow {
+            margin-left: 0px;
+        }
+
+        #timetohide {
+            display: none;
+        }
+
+        .aaddshowself img {
+            width: 330px;
+        }
+    }
+
+    @media screen and (min-width:980px){
+        .abodyshow {
+            margin-left: 55px;
+        }
+
+        #tomore {
+            margin-top: 30px;
+        }
+
+        #goknow {
+            margin-bottom: -20px;
+        }
+
+        .aaddshowself {
+            margin-left: 55px;
+        }
+
+        #guess {
+            margin-left: 45px;
+        }
+    }
+
     #goknow {
         background: none;
         color: #272B2D;
@@ -402,6 +452,8 @@
             }).mouseout(function () {
                 $(this).css('color','#959FAF')
             });
+
+            $('.aaddshowself').find('img').attr('title','');
 
         });
 

@@ -23,12 +23,13 @@
                     <div class="collapse" id="collapse">
                         <div class="well" style="background-color: #f3f5f7;border: none;box-shadow: none;height: 75px;">
                             <div class="col-lg-6" style="margin-left: 95px;">
-                                <form action="">
+                                <form action="/newtopics" method="post">
+                                    {{ csrf_field() }}
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="输入你想要创建的话题"
-                                               style="box-shadow: none;">
+                                        <input type="text" class="form-control" name="name" placeholder="输入你想要创建的话题"
+                                               style="box-shadow: none;" required>
                                         <span class="input-group-btn">
-                                        <button class="btn btn-success" type="button">提交话题</button>
+                                        <button class="btn btn-success" type="submit">提交话题</button>
                                     </span>
                                     </div>
                                 </form>

@@ -40,6 +40,8 @@ Route::post('/questions/{question}/answer','AnswersController@store');
 Route::get('/topics','TopicsController@index');
 Route::get('/topics/{id}','TopicsController@show');
 
+Route::post('/newtopics','NewTopicsController@store');
+
 Route::get('/notifications/read','NotificationsController@read');
 Route::get('/notifications','NotificationsController@index');
 Route::get('/notifications/{notification}','NotificationsController@show');
