@@ -156,6 +156,7 @@
     </div>
 </div>
 
+@if(Auth::guest())
 <style>
     @media screen and (max-width:980px){
         #navbar {
@@ -176,6 +177,7 @@
         }
     }
 </style>
+@endif
 
 
 <!-- Scripts -->

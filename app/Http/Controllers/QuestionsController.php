@@ -65,6 +65,7 @@ class QuestionsController extends Controller
         ];
         $question = $this->questionRepository->create($data);
         $question->user()->increment('questions_count');
+        $question->user()->increment('follow_questions_count');
         Auth::user()->follows()->toggle($question->id);
         $question->topics()->attach($topics);
 
