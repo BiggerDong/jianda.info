@@ -33,7 +33,7 @@
     <div id="app"></div>
     <div class="container-fluid">
         <div class="col-md-6">
-            <a href="/"><img class="login_logo" width="57px" src="http://io.jianda.info/logo_64.png" alt=""></a>
+            <a href="/"><img class="login_logo" width="57px" src="https://wx3.sinaimg.cn/mw690/005HslCFly1fjqckcx4i1j301s01s0ju.jpg" alt=""></a>
             <h2 style="color: #272B2D">简答 <small id="login-logo-to-change" style="color: #272B2D">让答案更简单</small></h2>
         </div>
     </div>
@@ -173,7 +173,7 @@
                         <a  style="color: #636b6f;text-decoration: none;">简答爱你</a> &middot;
 
                         <a>
-                            <img height="21px" style="margin-top: -4px;" src="http://io.jianda.info/alixin.png" alt="">
+                            <img height="21px" style="margin-top: -4px;" src="https://wx3.sinaimg.cn/mw690/005HslCFly1fjqckhqkcwj302o016glf.jpg" alt="">
                         </a>
                     </p>
 
