@@ -72,6 +72,9 @@
                     </div>
                     <hr>
                 @endforeach
+                <div class="algolia">
+                    <img src="http://io.jianda.info/algolia.svg" alt="">
+                </div>
                 <div class="page">
                     {{ $questions->links() }}
                 </div>

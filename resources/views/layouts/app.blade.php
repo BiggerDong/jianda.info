@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="description"  content="简答是一个轻量级的在线问答社区，给你一个简单清晰的答案。">
+    <meta name="keywords"  content="简答，简答官网，问答，在线问答，创作，jianda.info">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta name="baidu_union_verify" content="00ca3c468b7e36d73d56f982fd9bac21">
 
     @if(Auth::check() && Auth::user()->unreadNotifications->count() > 0)
         <title>({{ Auth::user()->unreadNotifications->count() }}){{ config('app.name') }} - 让答案更简单</title>
