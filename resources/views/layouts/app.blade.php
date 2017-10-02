@@ -59,9 +59,10 @@
                 @if(Auth::guest())
                 <form class="navbar-form" id="search-form-mobile" action="/search">
                     <input type="text" class="form-control" id="search-input-mobile" name="keyword" aria-label="..."
-                           placeholder="搜索你感兴趣的问题" style="width: 260px;box-shadow: none;margin-top: -11px;margin-bottom: -20px;">
+                           placeholder="搜索你感兴趣的问题"
+                           style="width: 290px;box-shadow: none;margin-top: -11px;margin-bottom: -20px;-webkit-appearance: none;">
                     <button type="submit" class="btn btn-link" id="ask-mobile"
-                            style="text-decoration: none;margin-top: -16px;margin-bottom: -20px;margin-left: 220px;">
+                            style="text-decoration: none;margin-top: -16px;margin-bottom: -20px;margin-left: 250px;">
                         <i class="iconfont" id="search-icon-mobile"
                            style="color: #959FAF;font-size: 14px;">&#xe69f;</i>
                     </button>
