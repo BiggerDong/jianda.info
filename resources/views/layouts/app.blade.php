@@ -159,6 +159,7 @@
             <div class="row">
                 <div class="col-md-8" style="margin-top: 5%;text-align: center;">
                     <footer>
+                        <img src="http://io.jianda.info/jianda-logo-64-gray.png" alt="" style="width: 20px;margin-bottom: 10px;">
                         <p style="color: #636b6f;">&copy; 2017 简答
                         </p>
                     </footer>
