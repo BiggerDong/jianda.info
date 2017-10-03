@@ -42,8 +42,8 @@
                     <!-- Example row of columns -->
                     <div class="row">
                         <div class="col-lg-6">
-                            <h2>关于简答</h2>
-                            <p>简答是一个轻量级的在线问答社区。在回答中有150字的字数限制，我们认为一般150字以内的答案基本可以解决大多数问题，如果需要额外说明，可以使用富文本编辑器进行补充；查看答案时点击展开了解即可查看。 </p>
+                            <h2>免责声明</h2>
+                            <p>简答上面的内容（除简答官方账号发布）均由用户所创作，请尊重作者及简答的版权。如在简答发现转载但未标明来源的侵权内容，请作者及时联系我们，我们将在第一时间内进行整改。联系邮箱：service@jianda.info</p>
                         </div>
                         <div class="col-lg-6">
                             <h2>技术支持</h2>
@@ -61,7 +61,8 @@
                             <div class="row">
                                 <div class="col-md-12" style="margin-top: 3%;text-align: center;">
                                     <footer>
-                                        <p style="color: #636b6f;">&copy; 2017 简答 &middot; <i class="iconfont" style="color: #959FAF;font-size: 20px;">&#xe60b;</i> 大头东
+                                        <img src="http://io.jianda.info/jianda-logo-64-gray.png" alt="" style="width: 20px;margin-bottom: 10px;">
+                                        <p style="color: #636b6f;">&copy; 2017 简答 &middot; <i class="iconfont" style="color: rgb(99, 107, 111);font-size: 20px;">&#xe60b;</i> 大头东
                                         </p>
                                     </footer>
                                 </div>
