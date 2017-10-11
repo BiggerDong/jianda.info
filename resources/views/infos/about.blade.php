@@ -41,11 +41,21 @@
 
                     <!-- Example row of columns -->
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <h2>免责声明</h2>
                             <p>简答上面的内容（除简答官方账号发布）均由用户所创作，请尊重作者及简答的版权。如在简答发现转载但未标明来源的侵权内容，请作者及时联系我们，我们将在第一时间内进行整改。联系邮箱：service@jianda.info</p>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
+                            <h2>使用规范</h2>
+                            <p>
+                            <li>文明提问、回答、评论，严重者将对其进行封号处理</li>
+                            <li>不要重复提问，提问已有或相似的问题</li>
+                            <li>不要答非所问</li>
+                            <li>理性赞同答案</li>
+                            <li>和谐共处</li>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
                             <h2>技术支持</h2>
                             <p>
                                 <li>Laravel、Vue提供框架开发支持</li>

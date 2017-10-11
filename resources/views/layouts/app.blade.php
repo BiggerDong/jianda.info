@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"  content="简答是一个轻量级的在线问答社区，给你一个简单清晰的答案。">
-    <meta name="keywords"  content="简答，简答官网，问答，在线问答，创作，jianda.info">
+    <meta name="description"  content="简答是一个轻量级的在线问答社区。本着让让答案更简单的理念，在回答中有150字的字数限制，一般150字以内的答案基本可以解决大多数问题，如果需要额外说明，可以使用富文本编辑器进行补充；查看答案时点击展开了解即可查看。上简答，给你清晰。">
+    <meta name="keywords"  content="简答，简答官网，问答，在线问答，创作，jianda.info, 简书, 知乎, 知道, 社区, jianda, 简答网">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
