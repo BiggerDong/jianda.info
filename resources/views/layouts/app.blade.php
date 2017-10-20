@@ -162,6 +162,8 @@
                     <footer>
                         <img src="http://io.jianda.info/jianda-logo-64-gray.png" alt="" style="width: 20px;margin-bottom: 10px;">
                         <p style="color: #636b6f;">&copy; 2017 简答
+                            <a target="_blank" href="http://www.miitbeian.gov.cn"
+                               style="color: #636b6f;text-decoration: none;margin-left: 10px">辽ICP备17009065号-1</a>
                         </p>
                     </footer>
                 </div>
